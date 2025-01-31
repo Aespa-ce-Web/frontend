@@ -1,0 +1,7 @@
+<section class="">
+  <h1>Stock</h1>
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    @for (article of (this.articles); track article.id) {
+        <app-article-card [article]="article"></app-article-card>
+    }
+  </div>
