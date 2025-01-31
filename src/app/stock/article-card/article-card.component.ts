@@ -8,12 +8,8 @@ import { Article } from '../../models/Article';
   templateUrl: './article-card.component.html',
   styleUrl: './article-card.component.css'
 })
-export class ArticleCardComponent implements OnInit {
+export class ArticleCardComponent {
   @Input() article!: Article;
 
   constructor() {}
-
-  ngOnInit(): void {
-    console.log('ArticleCardComponent :', this.article);
-  }
 }

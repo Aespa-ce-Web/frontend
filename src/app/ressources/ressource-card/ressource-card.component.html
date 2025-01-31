@@ -1,0 +1,15 @@
+<div class="w-full bg-lime-100 text-gray-900 rounded-3xl p-6 shadow-lg flex items-center border mx-auto">
+    <img src="https://cdn-icons-png.flaticon.com/512/11926/11926784.png" alt="Objet inconnu" class="w-32 h-32 mr-6 rounded-xl">
+    <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800">{{ ressource.nom }}</h3>
+        <p class="text-gray-900 mt-2">Identifiant: <span class="font-medium">{{ ressource.id }}</span></p>
+        <p class="text-gray-900">Type de ressource: <span class="font-semibold">{{mapRessourceType(ressource.type) }}</span> </p>
+        <p class="text-gray-900">Compétences: 
+            <strong class="text-gray-900">{{ ressource.competences }}</strong>
+        </p>
+    </div>
+    <div class="flex flex-col space-y-3 ml-6">
+        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg">Calendrier</button>
+        <button class="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all shadow-lg">Calendrier</button>
+    </div>
+</div>
