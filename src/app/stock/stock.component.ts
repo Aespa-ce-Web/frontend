@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/Article';
 import { StockServiceService } from '../services/stock-service.service';
-import { ArticleCardComponent } from '../article-card/article-card.component';
+import { ArticleCardComponent } from '../stock/article-card/article-card.component';
 
 @Component({
   selector: 'app-stock',
