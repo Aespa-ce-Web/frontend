@@ -2,14 +2,14 @@
     <i class="fa fa-rocket w-32 h-32 mr-6 text-black text-9xl"></i>
     <div class="flex-1">
         <h3 class="text-2xl font-bold text-gray-800">{{ ressource.nom }}</h3>
-        <p class="text-gray-900 mt-2">Identifiant: <span class="font-medium">{{ ressource.id }}</span></p>
-        <p class="text-gray-900">Type de ressource: <span class="font-semibold">{{mapRessourceType(ressource.type) }}</span> </p>
-        <p class="text-gray-900">Compétences: 
-            <strong class="text-gray-900">{{ ressource.competences }}</strong>
+        <p class="text-black mt-2">Identifiant: <span class="font-medium">{{ ressource.id }}</span></p>
+        <p class="text-black">Type de ressource: <span class="font-semibold">{{mapRessourceType(ressource.type) }}</span> </p>
+        <p class="text-black">Compétences: 
+            <strong class="text-black">{{ ressource.competences }}</strong>
         </p>
     </div>
     <div class="flex flex-col space-y-3 ml-6">
-        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg">Calendrier</button>
-        <button class="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all shadow-lg">Absences</button>
+        <button class="bg-emerald-600 text-white font-medium px-6 py-2 rounded-lg hover:bg-emerald-800 transition-all shadow-lg">Calendrier</button>
+        <button class="bg-red-700 text-white font-medium px-6 py-2 rounded-lg hover:bg-red-800 transition-all">Absences</button>
     </div>
 </div>
