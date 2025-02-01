@@ -1,15 +1,15 @@
-<div class="w-full bg-lime-100 text-gray-900 rounded-3xl p-6 shadow-lg flex items-center border mx-auto">
-    <img src="https://cdn-icons-png.flaticon.com/512/11926/11926784.png" alt="Objet inconnu" class="w-32 h-32 mr-6 rounded-xl">
+<div class="w-full bg-slate-100 text-gray-900 rounded-3xl p-6 shadow-lg flex items-center border mx-auto">
+    <i class="fa fa-dribbble w-32 h-32 mr-6 text-black text-9xl"></i>
     <div class="flex-1">
-        <h3 class="text-2xl font-bold text-gray-800">{{ article.nom }}</h3>
-        <p class="text-gray-900 mt-2">Référence: <span class="font-medium">{{ article.reference }}</span></p>
-        <p class="text-gray-900">Prix unitaire: <span class="font-semibold">{{ article.prix_unitaire }}€</span> </p>
-        <p class="text-gray-900">Quantité en stock: 
-            <strong class="text-gray-900">{{ article.quantite_stock }}</strong>
+        <h3 class="text-2xl font-bold text-black">{{ article.nom }}</h3>
+        <p class="text-black mt-2">Référence: <span class="font-medium">{{ article.reference }}</span></p>
+        <p class="text-black">Prix unitaire: <span class="font-semibold">{{ article.prix_unitaire }}€</span> </p>
+        <p class="text-black">Quantité en stock: 
+            <strong class="text-black">{{ article.quantite_stock }}</strong>
         </p>
     </div>
     <div class="flex flex-col space-y-3 ml-6">
-        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg">Entrée</button>
-        <button class="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all shadow-lg">Sortie</button>
+        <button class="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-800 transition-all shadow-lg">Entrée</button>
+        <button class="bg-red-700 text-white px-6 py-2 rounded-lg hover:bg-red-800 transition-all">Sortie</button>
     </div>
 </div>

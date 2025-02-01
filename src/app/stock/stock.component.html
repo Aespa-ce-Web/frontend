@@ -1,9 +1,13 @@
 <section class="p-8 flex justify-center">
   <div class="w-full max-w-4xl">
-    <h1 class="text-3xl font-extrabold text-gray-900 text-center mb-6">Stock</h1>
-    <div class="flex justify-center gap-12 mt-4 mb-6">
-      <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg w-1/5">Ajouter</button>
-      <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg w-1/5">Actualiser</button>
+    <h1 class="text-3xl font-extrabold text-slate-100 text-center mb-6">Stock</h1>
+    <div class="flex justify-center gap-2 mt-2 mb-4">
+      <button class="w-14 h-14 flex items-center justify-center bg-lime-500 rounded-full hover:bg-lime-600 transition-all shadow-lg group">
+        <i class="fa fa-cloud-upload text-black-900 text-2xl transition-all group-hover:text-white"></i>
+      </button>
+      <button class="w-14 h-14 flex items-center justify-center bg-lime-500 rounded-full hover:bg-lime-600 transition-all shadow-lg group">
+        <i class="fa fa-refresh text-black-900 text-2xl transition-all group-hover:text-white"></i>
+      </button>
     </div>
     <div class="flex flex-col items-center gap-6 w-full">
     @for (article of (this.articles); track article.id) {
