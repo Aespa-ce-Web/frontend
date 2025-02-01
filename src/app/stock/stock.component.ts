@@ -37,7 +37,7 @@ export class StockComponent implements OnInit {
     const term = this.searchTerm.toLowerCase();
     return this.articles.filter(article =>
       article.nom.toLowerCase().includes(term) ||
-      article.id
+      article.reference.toLowerCase().includes(term)
     );
   }
 }
