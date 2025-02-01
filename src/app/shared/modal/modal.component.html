@@ -1,0 +1,21 @@
+@if (isOpen) {
+    <div class="fixed inset-0 flex items-center justify-center z-50">
+        <div class="absolute inset-0 bg-gray-500 opacity-50" (click)="closeModal()"></div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 z-10 w-96">
+            <h3 class="text-lg font-semibold text-gray-900">{{ title }}</h3>
+            <p class="text-sm text-gray-500 mt-2">{{ content }}</p>
+
+            <div class="mt-4">
+                <label for="quantity" class="block text-sm font-medium text-gray-700">Quantité :</label>
+                <input type="number" id="quantity" [(ngModel)]="quantity" min="1" (input)="validateNumberInput($event)"
+                       class="mt-1 block w-full px-4 py-2 border rounded-lg focus:ring focus:ring-green-500">
+                </div>
+
+            <div class="mt-4 flex justify-end space-x-3">
+                <button (click)="closeModal()" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">Annuler</button>
+                <button (click)="confirmAction()" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-500 transition">Confirmer</button>
+            </div>
+        </div>
+    </div>
+}

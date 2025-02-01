@@ -8,8 +8,8 @@ export const routes: Routes = [
     {path: 'accueil', component: AccueilComponent},
     {path: 'stock', component: StockComponent},
     {path: 'ressources', component: RessourcesComponent},
-    { path: '', redirectTo: '/accueil', pathMatch: 'full' }, // Redirection par défaut vers le catalogue
-  { path: '**', redirectTo: '/accueil', pathMatch: 'full' } // Redirection pour les routes inconnues vers le catalogue
+    { path: '', redirectTo: '/accueil', pathMatch: 'full' }, // Redirection par défaut vers l'accueil
+  { path: '**', redirectTo: '/accueil', pathMatch: 'full' } // Redirection pour les routes inconnues vers l'accueil
 ];
 
 
