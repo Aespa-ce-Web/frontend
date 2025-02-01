@@ -9,7 +9,15 @@
         </p>
     </div>
     <div class="flex flex-col space-y-3 ml-6">
-        <button class="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-800 transition-all shadow-lg">Entrée</button>
-        <button class="bg-red-700 text-white px-6 py-2 rounded-lg hover:bg-red-800 transition-all">Sortie</button>
+        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-all shadow-lg" (click)="openModal('entrée')">Entrée</button>
+        <button class="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all shadow-lg" (click)="openModal('sortie')">Sortie</button>
     </div>
 </div>
+
+<app-modal 
+  [isOpen]="isModalOpen" 
+  [title]="modalTitle" 
+  [content]="modalContent" 
+  (close)="closeModal()" 
+  (confirm)="confirmAction($event)">
+</app-modal>
