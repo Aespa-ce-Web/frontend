@@ -48,7 +48,8 @@ export class CalendarComponent {
   
   public onCreate(): void {
     this.route.paramMap.subscribe(params => {
-      this.ressourceId = parseInt(params.get('id') ?? '0');    this.initializeCalendar();});
+      this.ressourceId = parseInt(params.get('id') ?? '0');
+      this.initializeCalendar();});
     this.getReservationById();
     this.refreshEvents();
   }
