@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Ressource } from '../../models/Ressource';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-ressource-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './ressource-card.component.html',
   styleUrl: './ressource-card.component.css'
 })

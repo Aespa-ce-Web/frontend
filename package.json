@@ -18,6 +18,11 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@syncfusion/ej2-angular-buttons": "^28.2.3",
+    "@syncfusion/ej2-angular-calendars": "^28.2.3",
+    "@syncfusion/ej2-angular-inputs": "^28.2.3",
+    "@syncfusion/ej2-angular-schedule": "^28.2.3",
+    "@syncfusion/ej2-base": "^28.2.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

@@ -19,7 +19,7 @@ export class RessourcesComponent {
     constructor(private ressourcesService: RessourcesService) {}
   
     ngOnInit(): void {
-      this.ressourcesService.getStocks().subscribe({
+      this.ressourcesService.getRessources().subscribe({
         next: (data) => {
           this.ressources = data;
         },
